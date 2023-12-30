@@ -12,6 +12,10 @@
 		DFAC4BA02B40658A00FFDFCC /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAC4B9F2B40658A00FFDFCC /* Item.swift */; };
 		DFAC4BA22B40658B00FFDFCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFAC4BA12B40658B00FFDFCC /* Assets.xcassets */; };
 		DFAC4BA52B40658B00FFDFCC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFAC4BA42B40658B00FFDFCC /* Preview Assets.xcassets */; };
+		DFAC4BAC2B406D5000FFDFCC /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAC4BAB2B406D5000FFDFCC /* HomeView.swift */; };
+		DFAC4BAE2B406D8D00FFDFCC /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAC4BAD2B406D8D00FFDFCC /* SettingsView.swift */; };
+		DFAC4BB12B406E8900FFDFCC /* AccountantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAC4BB02B406E8900FFDFCC /* AccountantView.swift */; };
+		DFAC4BB42B40737100FFDFCC /* ButtonGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAC4BB32B40737100FFDFCC /* ButtonGrid.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +25,10 @@
 		DFAC4B9F2B40658A00FFDFCC /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		DFAC4BA12B40658B00FFDFCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DFAC4BA42B40658B00FFDFCC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DFAC4BAB2B406D5000FFDFCC /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		DFAC4BAD2B406D8D00FFDFCC /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		DFAC4BB02B406E8900FFDFCC /* AccountantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountantView.swift; sourceTree = "<group>"; };
+		DFAC4BB32B40737100FFDFCC /* ButtonGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonGrid.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +61,8 @@
 		DFAC4B9A2B40658A00FFDFCC /* SmartAccount */ = {
 			isa = PBXGroup;
 			children = (
+				DFAC4BB22B40736400FFDFCC /* Components */,
+				DFAC4BAF2B406E6D00FFDFCC /* Views */,
 				DFAC4B9B2B40658A00FFDFCC /* SmartAccountApp.swift */,
 				DFAC4B9D2B40658A00FFDFCC /* ContentView.swift */,
 				DFAC4B9F2B40658A00FFDFCC /* Item.swift */,
@@ -68,6 +78,24 @@
 				DFAC4BA42B40658B00FFDFCC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DFAC4BAF2B406E6D00FFDFCC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DFAC4BAB2B406D5000FFDFCC /* HomeView.swift */,
+				DFAC4BAD2B406D8D00FFDFCC /* SettingsView.swift */,
+				DFAC4BB02B406E8900FFDFCC /* AccountantView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DFAC4BB22B40736400FFDFCC /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				DFAC4BB32B40737100FFDFCC /* ButtonGrid.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,9 +168,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFAC4BB12B406E8900FFDFCC /* AccountantView.swift in Sources */,
+				DFAC4BAE2B406D8D00FFDFCC /* SettingsView.swift in Sources */,
 				DFAC4B9E2B40658A00FFDFCC /* ContentView.swift in Sources */,
+				DFAC4BAC2B406D5000FFDFCC /* HomeView.swift in Sources */,
 				DFAC4BA02B40658A00FFDFCC /* Item.swift in Sources */,
 				DFAC4B9C2B40658A00FFDFCC /* SmartAccountApp.swift in Sources */,
+				DFAC4BB42B40737100FFDFCC /* ButtonGrid.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
