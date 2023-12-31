@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF4CEA462B4187F7004D2FA1 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4CEA452B4187F7004D2FA1 /* UserService.swift */; };
+		DF4CEA482B419220004D2FA1 /* ConfigruationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4CEA472B419220004D2FA1 /* ConfigruationService.swift */; };
+		DF52BD322B419A7200AD2F40 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF52BD312B419A7200AD2F40 /* MainView.swift */; };
+		DF52BD352B419AE900AD2F40 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF52BD342B419AE900AD2F40 /* LoginView.swift */; };
+		DF52BD372B41A32F00AD2F40 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF52BD362B41A32E00AD2F40 /* KeychainService.swift */; };
+		DF917A7B2B417EEF00A6BBE1 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF917A7A2B417EEF00A6BBE1 /* NetworkService.swift */; };
 		DFAC4B9C2B40658A00FFDFCC /* SmartAccountApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAC4B9B2B40658A00FFDFCC /* SmartAccountApp.swift */; };
 		DFAC4B9E2B40658A00FFDFCC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAC4B9D2B40658A00FFDFCC /* ContentView.swift */; };
 		DFAC4BA02B40658A00FFDFCC /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAC4B9F2B40658A00FFDFCC /* Item.swift */; };
@@ -19,6 +25,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DF4CEA452B4187F7004D2FA1 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		DF4CEA472B419220004D2FA1 /* ConfigruationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigruationService.swift; sourceTree = "<group>"; };
+		DF52BD312B419A7200AD2F40 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		DF52BD342B419AE900AD2F40 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		DF52BD362B41A32E00AD2F40 /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
+		DF917A7A2B417EEF00A6BBE1 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		DF917A7C2B4181D200A6BBE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		DF917A7D2B41820200A6BBE1 /* SmartAccountDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SmartAccountDebug.entitlements; sourceTree = "<group>"; };
 		DFAC4B982B40658A00FFDFCC /* SmartAccount.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartAccount.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFAC4B9B2B40658A00FFDFCC /* SmartAccountApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartAccountApp.swift; sourceTree = "<group>"; };
 		DFAC4B9D2B40658A00FFDFCC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -42,6 +56,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DF917A772B417DEC00A6BBE1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DF917A7A2B417EEF00A6BBE1 /* NetworkService.swift */,
+				DF4CEA452B4187F7004D2FA1 /* UserService.swift */,
+				DF4CEA472B419220004D2FA1 /* ConfigruationService.swift */,
+				DF52BD362B41A32E00AD2F40 /* KeychainService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		DFAC4B8F2B40658A00FFDFCC = {
 			isa = PBXGroup;
 			children = (
@@ -61,6 +86,9 @@
 		DFAC4B9A2B40658A00FFDFCC /* SmartAccount */ = {
 			isa = PBXGroup;
 			children = (
+				DF917A7D2B41820200A6BBE1 /* SmartAccountDebug.entitlements */,
+				DF917A7C2B4181D200A6BBE1 /* Info.plist */,
+				DF917A772B417DEC00A6BBE1 /* Services */,
 				DFAC4BB22B40736400FFDFCC /* Components */,
 				DFAC4BAF2B406E6D00FFDFCC /* Views */,
 				DFAC4B9B2B40658A00FFDFCC /* SmartAccountApp.swift */,
@@ -86,6 +114,8 @@
 				DFAC4BAB2B406D5000FFDFCC /* HomeView.swift */,
 				DFAC4BAD2B406D8D00FFDFCC /* SettingsView.swift */,
 				DFAC4BB02B406E8900FFDFCC /* AccountantView.swift */,
+				DF52BD312B419A7200AD2F40 /* MainView.swift */,
+				DF52BD342B419AE900AD2F40 /* LoginView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -170,10 +200,16 @@
 			files = (
 				DFAC4BB12B406E8900FFDFCC /* AccountantView.swift in Sources */,
 				DFAC4BAE2B406D8D00FFDFCC /* SettingsView.swift in Sources */,
+				DF4CEA462B4187F7004D2FA1 /* UserService.swift in Sources */,
+				DF917A7B2B417EEF00A6BBE1 /* NetworkService.swift in Sources */,
 				DFAC4B9E2B40658A00FFDFCC /* ContentView.swift in Sources */,
 				DFAC4BAC2B406D5000FFDFCC /* HomeView.swift in Sources */,
+				DF52BD352B419AE900AD2F40 /* LoginView.swift in Sources */,
+				DF52BD372B41A32F00AD2F40 /* KeychainService.swift in Sources */,
 				DFAC4BA02B40658A00FFDFCC /* Item.swift in Sources */,
+				DF52BD322B419A7200AD2F40 /* MainView.swift in Sources */,
 				DFAC4B9C2B40658A00FFDFCC /* SmartAccountApp.swift in Sources */,
+				DF4CEA482B419220004D2FA1 /* ConfigruationService.swift in Sources */,
 				DFAC4BB42B40737100FFDFCC /* ButtonGrid.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -181,10 +217,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		DFAC4BA62B40658B00FFDFCC /* Debug */ = {
+		DF52BD2F2B41984500AD2F40 /* Staging */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				API_BASE_URL = "http://127.0.0.1:4000";
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -242,12 +279,109 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
-			name = Debug;
+			name = Staging;
+		};
+		DF52BD302B41984500AD2F40 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				API_BASE_URL = "https://smartaccount.hr";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SmartAccount/SmartAccountDebug.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SmartAccount/Preview Content\"";
+				DEVELOPMENT_TEAM = L4X9FWWB7R;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SmartAccount/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.0x7f.dors.SmartAccount;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Staging;
+		};
+		DFAC4BA62B40658B00FFDFCC /* Local */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				API_BASE_URL = "http://127.0.0.1:4000";
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Local;
 		};
 		DFAC4BA72B40658B00FFDFCC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				API_BASE_URL = "http://127.0.0.1:4000";
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -300,17 +434,20 @@
 			};
 			name = Release;
 		};
-		DFAC4BA92B40658B00FFDFCC /* Debug */ = {
+		DFAC4BA92B40658B00FFDFCC /* Local */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				API_BASE_URL = "https://smartaccount.hr";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SmartAccount/SmartAccountDebug.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SmartAccount/Preview Content\"";
 				DEVELOPMENT_TEAM = L4X9FWWB7R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SmartAccount/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -327,11 +464,12 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
-			name = Debug;
+			name = Local;
 		};
 		DFAC4BAA2B40658B00FFDFCC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				API_BASE_URL = "https://smartaccount.hr";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -340,6 +478,7 @@
 				DEVELOPMENT_TEAM = L4X9FWWB7R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SmartAccount/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -364,7 +503,8 @@
 		DFAC4B932B40658A00FFDFCC /* Build configuration list for PBXProject "SmartAccount" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DFAC4BA62B40658B00FFDFCC /* Debug */,
+				DFAC4BA62B40658B00FFDFCC /* Local */,
+				DF52BD2F2B41984500AD2F40 /* Staging */,
 				DFAC4BA72B40658B00FFDFCC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -373,7 +513,8 @@
 		DFAC4BA82B40658B00FFDFCC /* Build configuration list for PBXNativeTarget "SmartAccount" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DFAC4BA92B40658B00FFDFCC /* Debug */,
+				DFAC4BA92B40658B00FFDFCC /* Local */,
+				DF52BD302B41984500AD2F40 /* Staging */,
 				DFAC4BAA2B40658B00FFDFCC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;

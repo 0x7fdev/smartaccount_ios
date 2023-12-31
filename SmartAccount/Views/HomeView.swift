@@ -8,12 +8,14 @@
 import SwiftUI
 
 struct HomeView: View {
+    @State private var user: User? = nil
+    
     var body: some View {
         VStack(alignment: .leading) {
             VStack(alignment: .leading) {
-                Text("0x7f d.o.o.")
+                Text(self.user?.company.companyName ?? "")
                     .font(.system(size: 40, weight: .bold))
-                Text("OIB: 23618229102")
+                Text("OIB: \(self.user?.company.vatId ?? "")")
             }
             .padding(.leading)
             ShortcutsStyleButtonsView()
@@ -21,8 +23,21 @@ struct HomeView: View {
         }
         .frame(maxWidth: .infinity, alignment: .leading)
         .padding(.top, 20)
+        .onAppear(perform: loadData)
         .tabItem {
             Label("Home", systemImage: "house")
+        }
+    }
+    
+    func loadData() {
+        UserService.shared.fetchUser() { result in
+            switch result {
+            case .success(let user):
+                print("User \(user.company.companyName)")
+                self.user = user
+            case .failure(let error):
+                print("Error fetching user: \(error)")
+            }
         }
     }
 }

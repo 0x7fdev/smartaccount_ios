@@ -12,6 +12,11 @@ struct SettingsView: View {
         VStack(alignment: .leading) {
             Text("Postavke")
                 .font(.system(size: 40, weight: .bold))
+            Button(action: {
+                KeychainService.shared.logout()
+            }) {
+                Text("log out")
+            }
             Spacer()
         }
         .frame(maxWidth: .infinity, alignment: .leading)
